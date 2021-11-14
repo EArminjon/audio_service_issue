@@ -66,6 +66,7 @@ class MainScreen extends StatelessWidget {
                                 artUri: Uri.parse('https://media.wnyc.org/i/1400/1400/l/80/1/ScienceFriday_WNYCStudios_1400.jpg'),
                               ));
                             } on PlatformException catch (err) {
+                              print("playMediaItem ERROR 2");
                               print(err);
                             } catch (err) {
                               print("playMediaItem ERROR");
