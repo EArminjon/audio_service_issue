@@ -153,7 +153,7 @@ class AudioPlayerHandler extends BaseAudioHandler {
   Future<void> playMediaItem(MediaItem mediaItem) async {
     this.mediaItem.add(mediaItem);
 
-    /// if preload ios while display play button then pause button
+    /// if the property preload is [true] on ios, ios while display the play button icon and then pause button, weird
     await _player.setUrl(mediaItem.id, preload: false);
     await play();
   }
